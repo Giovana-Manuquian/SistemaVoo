@@ -4,12 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class VooEmirates extends Voo {
-    List<Voo> listEmieates = new ArrayList<>();
+    private String classe;
 
-    public VooEmirates()
-
-    public void adicionarEmirates(VooEmirates vooEmirates){
-        listEmieates.add(vooEmirates);
+    public String getClasse() {
+        return classe;
     }
 
+    public void setClasse(String classe) {
+        this.classe = classe;
+    }
 }

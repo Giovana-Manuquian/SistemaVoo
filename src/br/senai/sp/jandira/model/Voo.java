@@ -1,16 +1,14 @@
 package br.senai.sp.jandira.model;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.LocalTime;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Voo {
-    private int numeroVoo, capacidadePassageiros;
-    private String origem, destino;
-    LocalDate dataPartida;
-    LocalDateTime horaPartida;
+    private int numeroVoo;
+    private String origem;
+    private String destino;
+    private LocalDate dataPartida;
+    private LocalTime horaPartida;
 
     public int getNumeroVoo() {
         return numeroVoo;
@@ -18,14 +16,6 @@ public class Voo {
 
     public void setNumeroVoo(int numeroVoo) {
         this.numeroVoo = numeroVoo;
-    }
-
-    public int getCapacidadePassageiros() {
-        return capacidadePassageiros;
-    }
-
-    public void setCapacidadePassageiros(int capacidadePassageiros) {
-        this.capacidadePassageiros = capacidadePassageiros;
     }
 
     public String getOrigem() {
@@ -52,12 +42,12 @@ public class Voo {
         this.dataPartida = dataPartida;
     }
 
-    public LocalDateTime getHoraPartida() {
+    public LocalTime getHoraPartida() {
         return horaPartida;
     }
 
-    public void setHoraPartida(LocalDateTime horaPartida) {
+    public void setHoraPartida(LocalTime horaPartida) {
         this.horaPartida = horaPartida;
     }
-
 }
+

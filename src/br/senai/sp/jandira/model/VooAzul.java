@@ -4,9 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class VooAzul extends Voo {
-    List<Voo> listAzul = new ArrayList<>();
+    private int capacidadePassageiros;
 
-    public void adicionarAzul(VooAzul vooAzul){
-        listAzul.add(vooAzul);
+    public int getCapacidadePassageiros() {
+        return capacidadePassageiros;
+    }
+
+    public void setCapacidadePassageiros(int capacidadePassageiros) {
+        this.capacidadePassageiros = capacidadePassageiros;
     }
 }
